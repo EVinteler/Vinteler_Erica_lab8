@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Vinteler_Erica_lab8.Data;
 
 namespace Vinteler_Erica_lab8.Migrations
 {
     [DbContext(typeof(Vinteler_Erica_lab8Context))]
-    partial class Vinteler_Erica_lab8ContextModelSnapshot : ModelSnapshot
+    [Migration("20201124104648_BookCategory")]
+    partial class BookCategory
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
