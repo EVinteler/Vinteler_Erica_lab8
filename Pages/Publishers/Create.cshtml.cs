@@ -21,7 +21,6 @@ namespace Vinteler_Erica_lab8.Pages.Publishers
 
         public IActionResult OnGet()
         {
-            ViewData["PublisherID"] = new SelectList(_context.Set<Publisher>(), "ID", "PublisherName");
             return Page();
         }
 
