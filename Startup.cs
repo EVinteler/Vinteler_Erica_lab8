@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Vinteler_Erica_lab8.Data;
 
 namespace Vinteler_Erica_lab8
 {
@@ -24,6 +26,9 @@ namespace Vinteler_Erica_lab8
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddDbContext<Vinteler_Erica_lab8Context>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("Vinteler_Erica_lab8Context")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

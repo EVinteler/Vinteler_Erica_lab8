@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "Vinteler_Erica_lab8Context"
+    }
+  }
+}
