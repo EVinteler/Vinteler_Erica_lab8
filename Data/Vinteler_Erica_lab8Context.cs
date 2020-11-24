@@ -17,5 +17,7 @@ namespace Vinteler_Erica_lab8.Data
         public DbSet<Vinteler_Erica_lab8.Models.Book> Book { get; set; }
 
         public DbSet<Vinteler_Erica_lab8.Models.Publisher> Publisher { get; set; }
+
+        public DbSet<Vinteler_Erica_lab8.Models.Category> Category { get; set; }
     }
 }
